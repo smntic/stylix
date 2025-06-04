@@ -15,7 +15,7 @@
       mkBoth = fg: bg: {inherit fg bg;};
       mkSame = c: (mkBoth c c);
     in {
-      manager = rec {
+      mgr = rec {
         # Reusing bat themes, since it's suggested in the stying guide
         # https://yazi-rs.github.io/docs/configuration/theme#manager
         syntect_theme = config.lib.stylix.colors {
